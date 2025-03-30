@@ -315,7 +315,7 @@ document.getElementById('download-cv').addEventListener('click', function(e) {
     e.preventDefault();
     
     // Replace this URL with the direct link to your PDF in GitHub
-    const pdfUrl = 'https://github.com/arunbhomi/your-repo/raw/main/path/to/your-cv.pdf';
+    const pdfUrl = 'https://github.com/arunbhomi/personal_website/blob/main/resume.pdf';
     
     // Create a temporary anchor element to trigger the download
     const link = document.createElement('a');
