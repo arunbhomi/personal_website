@@ -313,7 +313,7 @@ document.getElementById('download-cv').addEventListener('click', function(e) {
     e.preventDefault();
     
     // Get the PDF URL from GitHub (must be the RAW link)
-    const pdfUrl = 'https://github.com/arunbhomi/personal_website/raw/main/resume.pdf';
+    const pdfUrl = 'https://github.com/arunbhomi/personal_website/raw/main/Arun%20Bhomi_Resume.pdf';
     
     // Create a temporary anchor element
     const link = document.createElement('a');
