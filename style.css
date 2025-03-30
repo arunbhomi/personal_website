@@ -39,6 +39,34 @@ body {
     opacity: 0.3;
 }
 
+/* CV Download Button Styles */
+.cv-download {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
+
 /* Animations */
 @keyframes float {
     0%, 100% {
