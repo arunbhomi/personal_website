@@ -308,20 +308,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add border to typing text
     document.querySelector('.typing-text').style.borderRight = '3px solid white';
 });
-
-
-// Add this to your JavaScript
-document.getElementById('download-cv').addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    // Replace this URL with the direct link to your PDF in GitHub
-    const pdfUrl = 'https://github.com/arunbhomi/personal_website/blob/main/resume.pdf';
-    
-    // Create a temporary anchor element to trigger the download
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = 'Arun_Kumar_Bhomi_CV.pdf'; // The filename that will be saved
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
