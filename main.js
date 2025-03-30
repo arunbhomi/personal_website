@@ -309,17 +309,20 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.typing-text').style.borderRight = '3px solid white';
 });
 
-// Add this to your JavaScript
 document.getElementById('download-cv').addEventListener('click', function(e) {
     e.preventDefault();
     
-    // Replace this URL with the direct link to your PDF in GitHub
+    // Get the PDF URL from GitHub (must be the RAW link)
     const pdfUrl = 'https://github.com/arunbhomi/personal_website/raw/main/resume.pdf';
     
-    // Create a temporary anchor element to trigger the download
+    // Create a temporary anchor element
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Arun_Kumar_Bhomi_CV.pdf'; // The filename that will be saved
+    
+    // Force the file to download with a specific name
+    link.setAttribute('download', 'Arun_Kumar_Bhomi_CV.pdf');
+    
+    // Append to body, click, and remove
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
