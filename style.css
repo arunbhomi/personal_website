@@ -976,6 +976,32 @@ body.dark-mode .stat-label {
     color: #aaa;
 }
 
+/* Map Container Styles */
+.map-container {
+    margin-top: 20px;
+    width: 107%;
+}
+
+.map-container h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+/* Leaflet Map Styles */
+#map {
+    z-index: 1;
+}
+
+/* Adjust for dark mode if needed */
+.dark-mode #map {
+    filter: brightness(0.8) contrast(1.2);
+}
+
+.dark-mode .map-container h3 {
+    color: #ffffff;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .timeline::before {
