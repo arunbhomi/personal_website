@@ -140,17 +140,18 @@ body {
 }
 
 /* Header with 3D Effect */
-/* Header Background */
 header {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background-size: 400% 400%;
     color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    position: relative;
     overflow: hidden;
+    animation: gradientBG 15s ease infinite;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 header::before {
